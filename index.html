@@ -9,11 +9,19 @@
     <p style="font-family: verdana; text-align: center;">Password</p>
     <input style="position: relative; left: 45%;">
     <br>
-    <button style="text-align: center; font-family: verdana; position: relative; left: 44%; margin-top: 30px;">Não tens
+    <button id="botao_registo"style="text-align: center; font-family: verdana; position: relative; left: 44%; margin-top: 30px;">Não tens
         conta? Cria Conta</button>
     <br>
-    <button
+    <button id="botao_entrar"
         style="position: relative; left: 42%; width: 260px; height: 30px; font-family: verdana; margin-top: 30px;">Login</button>
 </body>
+
+<script>
+    const botaoRegisto =  document.getElementById("botao_registo");
+
+    botaoRegisto.addEventListener("click", function(){
+        window.location.pathname = "/registo.html";
+    });
+</script>
 
 </html>
